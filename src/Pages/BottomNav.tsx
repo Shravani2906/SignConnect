@@ -6,6 +6,12 @@ export default function BottomNav() {
 
   const location = useLocation();
 
+  const hideRoutes = ["/login", "/signup"];
+
+if (hideRoutes.includes(location.pathname)) {
+  return null;
+}
+
   const tabs = [
     { icon: "🏠", label: "Home", path: "/" },
     { icon: "📘", label: "Learn", path: "/learn" },
