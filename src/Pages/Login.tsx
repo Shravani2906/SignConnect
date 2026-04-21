@@ -39,6 +39,8 @@ export default function Login() {
   navigate("/");
 };
 
+  
+
   return (
     <div className={`min-h-screen transition-colors ${
       isDarkMode 
@@ -121,6 +123,12 @@ export default function Login() {
             >
               Continue
             </button>
+
+            
+
+            <p className="text-sm text-center text-gray-500 mt-2">
+  Use any name and email to explore the demo app.
+</p>
 
             {/* Footer */}
             <p className={`text-center text-xs mt-6 transition-colors ${
